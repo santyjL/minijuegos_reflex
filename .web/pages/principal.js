@@ -44,61 +44,57 @@ export default function Component() {
 </Center>
 </Box>
 </Center>
+  <Box sx={{"width": "100%"}}>
+  <Center>
+  <VStack>
   <Box sx={{"width": "100%", "marginY": "1em"}}>
   <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "3em", "PADDINGX": "0.6em", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00"}}>
-  <VStack>
-  <HStack>
+  <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
   <Link as={NextLink} href={`reglas_juego_uno`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
   {`Piedra🥌 , Papel📋 , Tijeras✂ , Lagarto🦎 , Spock 🖖`}
 </Heading>
 </Link>
-</HStack>
-  <HStack>
-  <Text sx={{"color": "#C1C1C1", "fontSize": "1.4em", "marginX": "1.5em", "marginY": "1em"}}>
+  <Text sx={{"color": "#C1C1C1", "fontSize": "1.4em"}}>
   {`El clasico juego de pieda papel o tijeras  lo conocemos todo el mundo pero no todos conocen el juego de piedra, papel, tijeras, gallina, spock`}
 </Text>
-</HStack>
 </VStack>
 </Center>
 </Box>
-  <Box>
-  <Center>
-  <HStack sx={{"width": "97%"}}>
-  <Center>
-  <VStack sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "PADDINGX": "0.6em", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00", "width": "50%"}}>
+  <Center sx={{"width": "97%"}}>
   <HStack>
+  <Box sx={{"width": "100%"}}>
+  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "PADDINGX": "0.6em", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00", "width": "92.4%"}}>
+  <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
   <Link as={NextLink} href={`Encuentra_el_numero`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
   {`Encuentra el numero 🎲`}
 </Heading>
 </Link>
-</HStack>
-  <HStack>
-  <Text sx={{"color": "#C1C1C1", "fontSize": "1.4em", "marginX": "1.5em", "marginY": "1em"}}>
+  <Text sx={{"color": "#C1C1C1", "fontSize": "1.4em"}}>
   {`del 1 al 100 se a perdido un numero pero cual sera, hay que entcontrarlo`}
 </Text>
-</HStack>
 </VStack>
+</Center>
+</Box>
   <Spacer/>
-  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "PADDINGX": "0.6em", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00", "width": "50%"}}>
-  <VStack>
-  <HStack>
+  <Box sx={{"width": "100%"}}>
+  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "PADDINGX": "0.6em", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00", "width": "92.4%"}}>
+  <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
   <Link as={NextLink} href={`3_en_rayas`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
   {`Tres en raya ❌ | ⭕  `}
 </Heading>
 </Link>
-</HStack>
-  <HStack>
-  <Text sx={{"color": "#C1C1C1", "fontSize": "1.4em", "marginX": "1.5em", "marginY": "1em"}}>
+  <Text sx={{"color": "#C1C1C1", "fontSize": "1.4em"}}>
   {`El clasico “Tres en raya no podia faltar  un juego mitico que todos conocemos`}
 </Text>
-</HStack>
 </VStack>
 </Center>
-</Center>
+</Box>
 </HStack>
+</Center>
+</VStack>
 </Center>
 </Box>
 </Box>
