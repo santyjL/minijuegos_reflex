@@ -2,6 +2,7 @@ import reflex as rx
 
 from GameMini.routers.routers import routers
 from GameMini.styles.color import Color, TextoColor
+from GameMini.styles.elementos.box import elemento_box, juego
 from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
@@ -10,14 +11,7 @@ def elemento_1 () -> rx.Component():
             rx.center(
             rx.heading("Mini Juegos disponibles" , color=TextoColor.TITULO.value  , font_size=TamañosTextos.TITULO.value ),
             ),
-            border_radius= Tamaños.BORDER_RADIUS.value,
-            background = Color.SEGUNDARIO.value,
-            margin=Tamaños.MARGIN.value,
-            PADDING_X=Tamaños.PADDING_X.value,
-            border=Tamaños.BORDER.value,
-            box_shadow= "1px 1px 1px 0px #FF5C00",
-
-            width="40%"
+            style=elemento_box
     )
 
 def juego_1() -> rx.Component():
@@ -34,12 +28,7 @@ def juego_1() -> rx.Component():
 
                     margin_x=Tamaños.MARGIN_X.value , margin_y=Tamaños.MARGIN_Y.value
             ),
-            border_radius= Tamaños.BORDER_RADIUS.value,
-            background = Color.SEGUNDARIO.value,
-            margin_x=Tamaños.MARGIN.value,
-            PADDING_X=Tamaños.PADDING_X.value,
-            border=Tamaños.BORDER.value,
-            box_shadow= "1px 1px 1px 0px #FF5C00",
+            style=juego()
 
         ),
         width="100%",
@@ -57,13 +46,7 @@ def juego_2() -> rx.Component():
                 rx.text("del 1 al 100 se a perdido un numero pero cual sera, hay que entcontrarlo" , color=TextoColor.SUBTITULOS.value , font_size=TamañosTextos.subtitulo.value ),
                 margin_x=Tamaños.MARGIN_X.value , margin_y=Tamaños.MARGIN_Y.value
             ),
-            border_radius= Tamaños.BORDER_RADIUS.value,
-            background = Color.SEGUNDARIO.value,
-            margin_x=Tamaños.MARGIN_X.value,
-            PADDING_X=Tamaños.PADDING_X.value,
-            border=Tamaños.BORDER.value,
-            box_shadow= "1px 1px 1px 0px #FF5C00",
-            width="92.4%"
+            style=juego("92.4%")
         ),
         width="100%"
     )
@@ -79,13 +62,7 @@ def juego_3() -> rx.Component():
                 rx.text("El clasico “Tres en raya no podia faltar  un juego mitico que todos conocemos" , color=TextoColor.SUBTITULOS.value , font_size=TamañosTextos.subtitulo.value ,),
                 margin_x=Tamaños.MARGIN_X.value , margin_y=Tamaños.MARGIN_Y.value
             ),
-            border_radius= Tamaños.BORDER_RADIUS.value,
-            background = Color.SEGUNDARIO.value,
-            margin_x=Tamaños.MARGIN_X.value,
-            PADDING_X=Tamaños.PADDING_X.value,
-            border=Tamaños.BORDER.value,
-            box_shadow= "1px 1px 1px 0px #FF5C00",
-            width="92.4%",
+            style=juego("92.4%")
         ),
         width="100%"
     )
@@ -101,7 +78,7 @@ def todos_los_juegos() -> rx.Component():
                         rx.spacer(),
                         juego_3(),
                     ),
-                    width="97%"
+                    width="100%"
                 ),
             ),
         ),

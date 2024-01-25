@@ -2,6 +2,8 @@ import reflex as rx
 
 from GameMini.routers.routers import routers
 from GameMini.styles.color import Color, TextoColor
+from GameMini.styles.elementos.box import elemento_box, juego
+from GameMini.styles.elementos.button import button
 from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
@@ -45,7 +47,7 @@ def reglas_juego_uno() -> rx.Component():
                     ),
                     rx.hstack(
                         rx.text("8.Lagarto come Papel : " ,color=TextoColor.TITULO.value,font_size=TamañosTextos.subtitulo.value ),
-                        rx.text("El Lagarto gana al comer el Papel" ,color=TextoColor.SUBTITULOS.value,font_size=TamañosTextos.subtitulo.value),
+                        rx.text("El Lagarto gana al comer el Papel." ,color=TextoColor.SUBTITULOS.value,font_size=TamañosTextos.subtitulo.value),
                     ),
                     rx.hstack(
                         rx.text("9.Papel desautoriza Spock : " ,color=TextoColor.TITULO.value,font_size=TamañosTextos.subtitulo.value ),
@@ -55,18 +57,12 @@ def reglas_juego_uno() -> rx.Component():
                         rx.text("10.Spock vaporiza Piedra:" ,color=TextoColor.TITULO.value,font_size=TamañosTextos.subtitulo.value ),
                         rx.text("Spock gana al vaporizar la Piedra." ,color=TextoColor.SUBTITULOS.value,font_size=TamañosTextos.subtitulo.value),
                     ),
-                    margin_y=Tamaños.MARGIN_Y.value,
                     text_align="left"
                     )
             ),
 
         ),
-            border_radius= Tamaños.BORDER_RADIUS.value,
-            background = Color.SEGUNDARIO.value,
-            margin=Tamaños.MARGIN.value,
-            padding=Tamaños.PADDING_X.value,
-            border=Tamaños.BORDER.value,
-            box_shadow= "1px 1px 1px 0px #FF5C00",
+            style=juego(),
 
 
     ),
@@ -81,10 +77,6 @@ def continuar_a_juego_1():
             ),
             href=routers.JUEGO_TRES.value
         ),
-        border_radius= Tamaños.BORDER_RADIUS.value,
-        background = Color.PRINCIPAL.value,
-        border=Tamaños.BORDER.value,
-        box_shadow= "1px 1px 1px 0px #32135A",
-        margin_left = "75%"
+        style=button
         )
 

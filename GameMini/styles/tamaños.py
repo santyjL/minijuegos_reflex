@@ -2,6 +2,7 @@ from enum import Enum
 
 
 class Tamaños(Enum):
+    PADDING = "0.8"
     PADDING_X="0.6em"
     PADDING_Y="0.3em"
     MARGIN="3em"

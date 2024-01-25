@@ -36,7 +36,7 @@ export default function Component() {
 </HStack>
 </Box>
   <Box sx={{"width": "100%"}}>
-  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "margin": "3em", "padding": "0.6em", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00"}}>
+  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00", "width": null}}>
   <VStack>
   <HStack>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
@@ -44,7 +44,7 @@ export default function Component() {
 </Heading>
 </HStack>
   <HStack>
-  <Box sx={{"marginY": "1em", "textAlign": "left"}}>
+  <Box sx={{"textAlign": "left"}}>
   <HStack>
   <Text sx={{"color": "#FFFFFF", "fontSize": "1.4em"}}>
   {`1.Piedra aplasta Tijeras : `}
@@ -106,7 +106,7 @@ export default function Component() {
   {`8.Lagarto come Papel : `}
 </Text>
   <Text sx={{"color": "#C1C1C1", "fontSize": "1.4em"}}>
-  {`El Lagarto gana al comer el Papel`}
+  {`El Lagarto gana al comer el Papel.`}
 </Text>
 </HStack>
   <HStack>
