@@ -2,6 +2,7 @@
 
 
 import { Fragment } from "react"
+import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
 import { Box, Button, Center, Heading, HStack, Image as ChakraImage, Link, Spacer, Text, VStack } from "@chakra-ui/react"
 import NextLink from "next/link"
 import "focus-visible/dist/focus-visible"
@@ -13,6 +14,7 @@ export default function Component() {
 
   return (
     <Fragment>
+  <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
   <Box sx={{"bg": "#292833", "backgroundSize": "cover", "height": "100vh"}}>
   <Box sx={{"bg": "#FF5C00", "border": "1px solid #000"}}>
   <HStack>

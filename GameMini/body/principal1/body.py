@@ -1,8 +1,8 @@
 import reflex as rx
 
 from GameMini.routers.routers import routers
-from GameMini.styles.color import Color, TextoColor
-from GameMini.styles.elementos.box import elemento_box, juego
+from GameMini.styles.color import TextoColor
+from GameMini.styles.elementos.box import box_present, elemento_box
 from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
@@ -28,7 +28,7 @@ def juego_1() -> rx.Component():
 
                     margin_x=Tamaños.MARGIN_X.value , margin_y=Tamaños.MARGIN_Y.value
             ),
-            style=juego()
+            style=box_present()
 
         ),
         width="100%",
@@ -46,7 +46,7 @@ def juego_2() -> rx.Component():
                 rx.text("del 1 al 100 se a perdido un numero pero cual sera, hay que entcontrarlo" , color=TextoColor.SUBTITULOS.value , font_size=TamañosTextos.subtitulo.value ),
                 margin_x=Tamaños.MARGIN_X.value , margin_y=Tamaños.MARGIN_Y.value
             ),
-            style=juego("92.4%")
+            style=box_present("92.4%")
         ),
         width="100%"
     )
@@ -62,7 +62,7 @@ def juego_3() -> rx.Component():
                 rx.text("El clasico “Tres en raya no podia faltar  un juego mitico que todos conocemos" , color=TextoColor.SUBTITULOS.value , font_size=TamañosTextos.subtitulo.value ,),
                 margin_x=Tamaños.MARGIN_X.value , margin_y=Tamaños.MARGIN_Y.value
             ),
-            style=juego("92.4%")
+            style=box_present("92.4%")
         ),
         width="100%"
     )

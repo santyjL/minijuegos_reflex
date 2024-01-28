@@ -4,7 +4,7 @@ from GameMini.styles.color import Color, TextoColor
 from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
-def juego(width = None):
+def box_present(width = None):
     juegos_box= dict (
         border_radius= Tamaños.BORDER_RADIUS.value,
         background = Color.SEGUNDARIO.value,

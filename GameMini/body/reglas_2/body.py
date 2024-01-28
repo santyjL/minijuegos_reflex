@@ -1,10 +1,10 @@
 import reflex as rx
 
 from GameMini.routers.routers import routers
-from GameMini.styles.color import Color, TextoColor
-from GameMini.styles.elementos.box import elemento_box, juego
+from GameMini.styles.color import TextoColor
+from GameMini.styles.elementos.box import box_present
 from GameMini.styles.elementos.button import button
-from GameMini.styles.tamaños import Tamaños, TamañosTextos
+from GameMini.styles.tamaños import TamañosTextos
 
 
 def reglas_juego_uno() -> rx.Component():
@@ -62,7 +62,7 @@ def reglas_juego_uno() -> rx.Component():
             ),
 
         ),
-            style=juego(),
+            style=box_present(),
 
 
     ),
