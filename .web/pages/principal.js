@@ -38,7 +38,7 @@ export default function Component() {
 </HStack>
 </Box>
   <Center>
-  <Box sx={{"borderRadius": "0.9em", "background": "#32135A", "margin": "3em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00", "width": "40%"}}>
+  <Box sx={{"borderRadius": "0.9em", "background": "#32135A", "margin": "3em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": "40%"}}>
   <Center>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
   {`Mini Juegos disponibles`}
@@ -50,7 +50,7 @@ export default function Component() {
   <Center>
   <VStack>
   <Box sx={{"width": "100%", "marginY": "1em"}}>
-  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00", "width": null}}>
+  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": null}}>
   <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
   <Link as={NextLink} href={`reglas_juego_uno`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
@@ -66,7 +66,7 @@ export default function Component() {
   <Center sx={{"width": "100%"}}>
   <HStack>
   <Box sx={{"width": "100%"}}>
-  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00", "width": "92.4%"}}>
+  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": "92.4%"}}>
   <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
   <Link as={NextLink} href={`Encuentra_el_numero`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
@@ -81,7 +81,7 @@ export default function Component() {
 </Box>
   <Spacer/>
   <Box sx={{"width": "100%"}}>
-  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00", "width": "92.4%"}}>
+  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": "92.4%"}}>
   <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
   <Link as={NextLink} href={`3_en_rayas`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>

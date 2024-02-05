@@ -2,7 +2,7 @@
 
 
 import { Fragment, useContext } from "react"
-import { EventLoopContext, StateContexts } from "/utils/context"
+import { EventLoopContext } from "/utils/context"
 import { Event, isTrue } from "/utils/state"
 import { Modal, ModalBody, ModalContent, ModalHeader, ModalOverlay, Text } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
@@ -41,16 +41,5 @@ export function Fragment_fd0e7cb8f9fb4669a6805377d925fba0 () {
   <Fragment/>
 )}
 </Fragment>
-  )
-}
-
-export function Text_ca96b91b89c4e309931e832638edcbcf () {
-  const state__count = useContext(StateContexts.state__count)
-
-
-  return (
-    <Text sx={{"fontSize": "13.5em", "color": "#000000"}}>
-  {state__count.count}
-</Text>
   )
 }

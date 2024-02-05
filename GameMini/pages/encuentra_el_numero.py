@@ -1,6 +1,7 @@
 import reflex as rx
 
-from GameMini.body.juego_2.body import estado, numero, reglas
+from GameMini.body.juego_2.body import (botones, estado, estado_text, intentos,
+                                        numero, reglas)
 from GameMini.components.navbar import navbar
 from GameMini.routers.routers import routers
 from GameMini.styles.color import Color, TextoColor
@@ -13,16 +14,25 @@ def index () ->rx.components:
         rx.center(
             rx.vstack(
                 reglas(),
-
-            rx.center(
-                rx.hstack(
-                    numero(),
-                    rx.spacer(),
-                    estado(),
-                    ),width="100%"
-                )
             )
         ),
+
+        rx.center(
+
+            rx.hstack(
+                rx.vstack(
+                    numero(),
+                    botones()
+
+                ),
+                intentos(),
+                rx.vstack(
+                    estado(),
+                    estado_text()
+                    )
+                )
+            ),
+
 
         bg=Color.BACKGROUND.value,
         background_size= "cover",

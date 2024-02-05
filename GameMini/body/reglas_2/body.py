@@ -3,7 +3,7 @@ import reflex as rx
 from GameMini.routers.routers import routers
 from GameMini.styles.color import TextoColor
 from GameMini.styles.elementos.box import box_present
-from GameMini.styles.elementos.button import button
+from GameMini.styles.elementos.button import butto
 from GameMini.styles.tamaños import TamañosTextos
 
 
@@ -77,6 +77,6 @@ def continuar_a_juego_1():
             ),
             href=routers.JUEGO_TRES.value
         ),
-        style=button
+        style=butto
         )
 

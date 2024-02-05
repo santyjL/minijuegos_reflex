@@ -38,7 +38,7 @@ export default function Component() {
 </HStack>
 </Box>
   <Box sx={{"width": "100%"}}>
-  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #FF5C00", "width": null}}>
+  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": null}}>
   <VStack>
   <HStack>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
@@ -132,7 +132,7 @@ export default function Component() {
 </VStack>
 </Center>
 </Box>
-  <Button sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "1px 1px 1px 0px #32135A", "marginLeft": "75%"}}>
+  <Button sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "marginLeft": "75%"}}>
   <Link as={NextLink} href={`3_en_rayas`}>
   <Text sx={{"fontSize": "2.7em"}}>
   {`continuar`}

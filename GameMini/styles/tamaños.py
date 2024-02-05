@@ -15,4 +15,5 @@ class Tamaños(Enum):
 class TamañosTextos(Enum):
     TITULO="2.7em"
     subtitulo="1.4em"
+    MEDIANO="6.5em"
     ENORME= "13.5em"
