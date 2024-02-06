@@ -4,6 +4,7 @@ from GameMini.styles.color import Color, TextoColor
 from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
+#presentacion de cajas donde su ancho es modificable
 def box_present(width = None):
     juegos_box= dict (
         border_radius= Tamaños.BORDER_RADIUS.value,
@@ -18,6 +19,7 @@ def box_present(width = None):
     return juegos_box
 
 
+#el mismo que el otro pero con los colores cambiados
 def box_present2(width = None):
     juegos_box= dict (
         border_radius= Tamaños.BORDER_RADIUS.value,

@@ -5,6 +5,7 @@ from GameMini.styles.color import Color, TextoColor
 from GameMini.styles.tamaños import Tamaños
 
 
+#el navbar estara en todos los router , contiene el codigo de github , y el nombre de la web
 def navbar() -> rx.Component:
     return rx.box(
             rx.hstack(

@@ -7,6 +7,7 @@ from GameMini.styles.elementos.button import butto
 from GameMini.styles.tamaños import TamañosTextos
 
 
+#en esta caja aparece como se juega el juego , son 10 reglas
 def reglas_juego_uno() -> rx.Component():
     return rx.box(
         rx.center(
@@ -69,6 +70,7 @@ def reglas_juego_uno() -> rx.Component():
         width="100%"
 )
 
+#este botton te llevara al rauter donde se encuentra el juego
 def continuar_a_juego_1():
     return rx.button(
         rx.link(

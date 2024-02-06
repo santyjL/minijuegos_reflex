@@ -49,20 +49,39 @@ export default function Component() {
   <Box sx={{"width": "100%"}}>
   <Center>
   <VStack>
-  <Box sx={{"width": "100%", "marginY": "1em"}}>
+  <Center>
+  <HStack>
+  <Box sx={{"width": "69%"}}>
   <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": null}}>
   <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
   <Link as={NextLink} href={`reglas_juego_uno`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
-  {`Piedra🥌 , Papel📋 , Tijeras✂ , Lagarto🦎 , Spock 🖖`}
+  {`Piedra🥌 , Papel📋 , Tijeras✂ , Lagarto🦎 , spock 🖖`}
 </Heading>
 </Link>
   <Text sx={{"color": "#C1C1C1", "fontSize": "1.4em"}}>
-  {`El clasico juego de pieda papel o tijeras  lo conocemos todo el mundo pero no todos conocen el juego de piedra, papel, tijeras, gallina, spock`}
+  {`El clasico juego de pieda papel o tijeras lo conocemos todo el mundo pero no todos conocen el juego de piedra,papel,tijeras,gallina,spock`}
 </Text>
 </VStack>
 </Center>
 </Box>
+  <Spacer/>
+  <Box sx={{"width": "30%"}}>
+  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": null}}>
+  <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
+  <Link as={NextLink} href={`Ping_pong`}>
+  <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
+  {`Ping Pong 🏓|🏓`}
+</Heading>
+</Link>
+  <Text sx={{"color": "#C1C1C1", "fontSize": "1.4em"}}>
+  {`El ping pog,unos de los primeros juegos existente en el mundo.`}
+</Text>
+</VStack>
+</Center>
+</Box>
+</HStack>
+</Center>
   <Center sx={{"width": "100%"}}>
   <HStack>
   <Box sx={{"width": "100%"}}>

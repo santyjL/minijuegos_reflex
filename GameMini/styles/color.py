@@ -1,12 +1,13 @@
 from enum import Enum
 
 
+#colores de la web
 class Color(Enum):
-    PRINCIPAL="#FF5C00"
-    SEGUNDARIO="#32135A"
-    BACKGROUND="#292833"
+    PRINCIPAL="#FF5C00" #naranja
+    SEGUNDARIO="#32135A" #morado
+    BACKGROUND="#292833" #gris claro
 
 class TextoColor(Enum):
-    TITULO="#FFFFFF"
-    SUBTITULOS="#C1C1C1"
-    ESPECIAL="#000000"
+    TITULO="#FFFFFF" #blaco
+    SUBTITULOS="#C1C1C1" #un gris tipo cian
+    ESPECIAL="#000000" #negro
