@@ -1,6 +1,7 @@
 from enum import Enum
 
 
+#tamaños generales
 class Tamaños(Enum):
     PADDING = "0.8"
     PADDING_X="0.6em"
@@ -11,7 +12,7 @@ class Tamaños(Enum):
     BORDER_RADIUS="0.9em"
     BORDER="1px solid #000"
 
-
+#tamaños para el texto
 class TamañosTextos(Enum):
     TITULO="2.7em"
     subtitulo="1.4em"

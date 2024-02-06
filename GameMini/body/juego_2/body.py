@@ -4,31 +4,29 @@ import reflex as rx
 
 from GameMini.components.bottones import button1, button2
 from GameMini.routers.routers import routers
-from GameMini.styles.color import Color, TextoColor
-from GameMini.styles.elementos.box import (box_present, box_present2,
-                                           elemento_box)
+from GameMini.styles.color import TextoColor
+from GameMini.styles.elementos.box import box_present, box_present2
 from GameMini.styles.elementos.button import butto, butto2, butto3
 from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
+#back-end
 class Count(rx.State):
+
+    #variables
     num: int = random.randint(1 , 101)
     count: int = 0
     estado : str = "¡¡¡¡!!!"
     intentos : int = 5
 
 
+    #verifica si se puede aumentar el numero si es haci lo aumenta
     def increment_max(self):
         if self.count < 91 :
             self.count +=10
         else :
             return
 
-    def decrementt_max(self):
-        if self.count >9 :
-            self.count -=10
-        else :
-            return
 
     def increment(self):
         if self.count <100:
@@ -36,12 +34,21 @@ class Count(rx.State):
         else :
             return
 
+    #verifica si se puede disminuir el numero si es haci lo aumenta
+    def decrementt_max(self):
+        if self.count >9 :
+            self.count -=10
+        else :
+            return
+
+
     def decrement(self):
         if self.count >0 :
             self.count -=1
         else :
             return
 
+    #verifica si el numero es mayor o menor al numero a encontrar (por alguna razon no sirven los elif por eso uso match)
     def start(self):
         match self.num:
             case _ if self.num < self.count : self.estado = "<<<"
@@ -50,6 +57,7 @@ class Count(rx.State):
 
         self.intentos -= 1
 
+    #se crean las 2 variables que se muestran en la web y que son mutables
     @rx.var
     def get_count(self) -> int:
         return self.count
@@ -58,8 +66,7 @@ class Count(rx.State):
     def get_estado(self) -> str:
         return self.estado
 
-
-
+#se crea un apartado para el enunciado que indica de que trata el juego
 def reglas() -> rx.component:
     return rx.box(
         rx.center(
@@ -73,16 +80,9 @@ def reglas() -> rx.component:
         style=box_present("70%") , margin=Tamaños.MARGIN.value,
   )
 
-def intentos() -> rx.component:
-    return rx.box(
-        rx.center(
-            rx.hstack(
-                rx.text(Count.intentos , font_size=TamañosTextos.MEDIANO.value ,color=TextoColor.ESPECIAL.value,     PADDING_X=Tamaños.PADDING.value )
-            )
-        ),style=box_present2("100%")
-    )
 
 
+#se crean todos los botones que modifica el estado de count
 def botones() -> rx.component:
     return rx.box(
         rx.hstack(
@@ -94,6 +94,8 @@ def botones() -> rx.component:
         )
     )
 
+
+#se muestra si el estado count es menor , mayor o igual al numero a encontrar
 def estado_text() -> rx.component:
     return rx.box(
         rx.hstack(
@@ -105,6 +107,8 @@ def estado_text() -> rx.component:
         )
     )
 
+
+#se crea la caja donde aparece el count
 def numero() -> rx.component:
     return rx.box(
         rx.vstack(
@@ -116,6 +120,8 @@ def numero() -> rx.component:
 
     )
 
+
+#se crea la caja donde aparece el estado
 def estado() -> rx.component:
     return rx.box(
         rx.vstack(
@@ -124,3 +130,14 @@ def estado() -> rx.component:
             ),
                 ),style=box_present2("100%")
         )
+
+
+#se crea la caja donde se actualiza los la cantidad de intentos
+def intentos() -> rx.component:
+    return rx.box(
+        rx.center(
+            rx.hstack(
+                rx.text(Count.intentos , font_size=TamañosTextos.MEDIANO.value ,color=TextoColor.ESPECIAL.value,     PADDING_X=Tamaños.PADDING.value )
+            )
+        ),style=box_present2("100%")
+    )
