@@ -1,5 +1,5 @@
 # MINI GAME 🌟
-Esta web hecha con python y reflex cumple un objetivo puramente educativo.
-Esta web esta para practicar y fortalecer mis conocimientos con el framework reflex en python 
+Esta web hecha con __python__ y __reflex__ cumple un objetivo puramente __educativo__.
+Esta web esta para practicar y fortalecer mis conocimientos con el framework __reflex__ en python 
 
-# Resultados visuales 👀
+## Resultados visuales 👀
