@@ -10,6 +10,7 @@ from GameMini.styles.color import Color, TextoColor
 @rx.page(route=routers.JUEGO_DOS.value)
 def index () ->rx.components:
     return rx.box(
+
         navbar(),
         rx.center(
             rx.vstack(
