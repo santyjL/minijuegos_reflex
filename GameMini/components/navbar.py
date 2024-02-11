@@ -20,7 +20,7 @@ def navbar() -> rx.Component:
                 rx.spacer(),
                 rx.link(
                     rx.image(src="/github icon.png" , width="3.6em" , height="100%"),
-                    href="https://github.com/santyjL/santyjL",
+                    href="https://github.com/santyjL/minijuegos_reflex",
                     is_external=True
                 ),
 
@@ -28,3 +28,4 @@ def navbar() -> rx.Component:
             bg=Color.PRINCIPAL.value,
             border = Tamaños.BORDER.value
         )
+

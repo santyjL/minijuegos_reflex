@@ -1,7 +1,7 @@
 import reflex as rx
 
-from GameMini.styles.color import Color, TextoColor
-from GameMini.styles.tamaños import Tamaños, TamañosTextos
+from GameMini.styles.color import TextoColor
+from GameMini.styles.tamaños import TamañosTextos
 
 
 #el botton uno tiene el parametro de estilo , texto , funcion y el ancho
