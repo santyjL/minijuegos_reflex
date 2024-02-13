@@ -133,7 +133,7 @@ export default function Component() {
 </Center>
 </Box>
   <Button sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "marginLeft": "75%"}}>
-  <Link as={NextLink} href={`/3_en_rayas`}>
+  <Link as={NextLink} href={`/piedra_papel_tijeras_lagarto_spock`}>
   <Text sx={{"fontSize": "2.7em"}}>
   {`continuar`}
 </Text>

@@ -12,6 +12,70 @@ import NextHead from "next/head"
 
 
 
+export function Text_ca96b91b89c4e309931e832638edcbcf () {
+  const state__count = useContext(StateContexts.state__count)
+
+
+  return (
+    <Text sx={{"fontSize": "13.5em", "color": "#000000"}}>
+  {state__count.count}
+</Text>
+  )
+}
+
+export function Button_b5086e4056c550c70f71edaee4daeb47 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_ad75cce92a4ac5120b07a0c4ee6d9fc7 = useCallback((_e) => addEvents([Event("state.count.start", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <Button onClick={on_click_ad75cce92a4ac5120b07a0c4ee6d9fc7} sx={{"borderRadius": "0.9em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00", "width": "100%"}}>
+  <Text sx={{"fontSize": "2.7em", "color": "#FFFFFF"}}>
+  {`Start`}
+</Text>
+</Button>
+  )
+}
+
+export function Text_a818d50e4bab0d9f1ab62e77eb9eed79 () {
+  const state__count = useContext(StateContexts.state__count)
+
+
+  return (
+    <Text sx={{"fontSize": "13.5em", "color": "#000000"}}>
+  {state__count.estado}
+</Text>
+  )
+}
+
+export function Button_fb4a7aacd2f86980c00247a2e626ecca () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_82911dbe063caf14c99664e94196c8b5 = useCallback((_e) => addEvents([Event("state.count.increment_max", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <Button onClick={on_click_82911dbe063caf14c99664e94196c8b5} sx={{"borderRadius": "0.9em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00", "width": "100%"}}>
+  <Text sx={{"fontSize": "2.7em", "color": "#FFFFFF"}}>
+  {`+10`}
+</Text>
+</Button>
+  )
+}
+
+export function Button_9242eb8fca959adb0b421a564330e844 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_dee734a8d69f94b42f65eab2ee1c7716 = useCallback((_e) => addEvents([Event("state.count.increment", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <Button onClick={on_click_dee734a8d69f94b42f65eab2ee1c7716} sx={{"borderRadius": "0.9em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00", "width": "100%"}}>
+  <Text sx={{"fontSize": "2.7em", "color": "#FFFFFF"}}>
+  {`+1`}
+</Text>
+</Button>
+  )
+}
+
 export function Fragment_f7ea8225d31638c9eab90aa15eb5499a () {
   const state__count = useContext(StateContexts.state__count)
 
@@ -53,17 +117,14 @@ export function Button_cad2b09bade318ca06ad93c0ea2fd034 () {
   )
 }
 
-export function Button_b5086e4056c550c70f71edaee4daeb47 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
+export function Text_75856ce73ec21e760a94d64dc851fee1 () {
+  const state__count = useContext(StateContexts.state__count)
 
-  const on_click_ad75cce92a4ac5120b07a0c4ee6d9fc7 = useCallback((_e) => addEvents([Event("state.count.start", {})], (_e), {}), [addEvents, Event])
 
   return (
-    <Button onClick={on_click_ad75cce92a4ac5120b07a0c4ee6d9fc7} sx={{"borderRadius": "0.9em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00", "width": "100%"}}>
-  <Text sx={{"fontSize": "2.7em", "color": "#FFFFFF"}}>
-  {`Start`}
+    <Text sx={{"fontSize": "6.5em", "color": "#000000", "PADDINGX": "0.8"}}>
+  {state__count.intentos}
 </Text>
-</Button>
   )
 }
 
@@ -76,67 +137,6 @@ export function Button_b4963df3f38b8fe2ecf5a66afcca8d07 () {
     <Button onClick={on_click_69a557798893dbf58cd8192b8437c43d} sx={{"borderRadius": "0.9em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00", "width": "100%"}}>
   <Text sx={{"fontSize": "2.7em", "color": "#FFFFFF"}}>
   {`-1`}
-</Text>
-</Button>
-  )
-}
-
-export function Text_ca96b91b89c4e309931e832638edcbcf () {
-  const state__count = useContext(StateContexts.state__count)
-
-
-  return (
-    <Text sx={{"fontSize": "13.5em", "color": "#000000"}}>
-  {state__count.count}
-</Text>
-  )
-}
-
-export function Text_a818d50e4bab0d9f1ab62e77eb9eed79 () {
-  const state__count = useContext(StateContexts.state__count)
-
-
-  return (
-    <Text sx={{"fontSize": "13.5em", "color": "#000000"}}>
-  {state__count.estado}
-</Text>
-  )
-}
-
-export function Text_75856ce73ec21e760a94d64dc851fee1 () {
-  const state__count = useContext(StateContexts.state__count)
-
-
-  return (
-    <Text sx={{"fontSize": "6.5em", "color": "#000000", "PADDINGX": "0.8"}}>
-  {state__count.intentos}
-</Text>
-  )
-}
-
-export function Button_fb4a7aacd2f86980c00247a2e626ecca () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_82911dbe063caf14c99664e94196c8b5 = useCallback((_e) => addEvents([Event("state.count.increment_max", {})], (_e), {}), [addEvents, Event])
-
-  return (
-    <Button onClick={on_click_82911dbe063caf14c99664e94196c8b5} sx={{"borderRadius": "0.9em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00", "width": "100%"}}>
-  <Text sx={{"fontSize": "2.7em", "color": "#FFFFFF"}}>
-  {`+10`}
-</Text>
-</Button>
-  )
-}
-
-export function Button_9242eb8fca959adb0b421a564330e844 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_dee734a8d69f94b42f65eab2ee1c7716 = useCallback((_e) => addEvents([Event("state.count.increment", {})], (_e), {}), [addEvents, Event])
-
-  return (
-    <Button onClick={on_click_dee734a8d69f94b42f65eab2ee1c7716} sx={{"borderRadius": "0.9em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00", "width": "100%"}}>
-  <Text sx={{"fontSize": "2.7em", "color": "#FFFFFF"}}>
-  {`+1`}
 </Text>
 </Button>
   )
