@@ -11,13 +11,24 @@ import NextHead from "next/head"
 
 
 
-export function Heading_14d296cc5a5626b3e3db7aa9954bd123 () {
+export function Heading_d2c3016c1744cec37ad9aa47d0e64cf0 () {
   const state__estados = useContext(StateContexts.state__estados)
 
 
   return (
     <Heading sx={{"fontSize": "13.5em", "padding": 20}}>
-  {state__estados.jugada}
+  {state__estados.jugadas_npc}
+</Heading>
+  )
+}
+
+export function Heading_d8fb636aa9d95536b22ebf8241e93734 () {
+  const state__estados = useContext(StateContexts.state__estados)
+
+
+  return (
+    <Heading sx={{"fontSize": "13.5em", "padding": 20}}>
+  {state__estados.jugadas_jugador}
 </Heading>
   )
 }
@@ -49,27 +60,22 @@ export default function Component() {
 </Link>
 </HStack>
 </Box>
-  <HStack sx={{"margin": "3em"}}>
-  <Box sx={{"borderRadius": "0.9em", "background": "#FF5C00", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "width": "25%"}}>
   <Center>
-  <Heading_14d296cc5a5626b3e3db7aa9954bd123/>
+  <HStack spacing={`6em`} sx={{"margin": "3em"}}>
+  <Box sx={{"borderRadius": "0.9em", "background": "#FF5C00", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "width": "29%"}}>
+  <Center>
+  <Heading_d8fb636aa9d95536b22ebf8241e93734/>
 </Center>
 </Box>
   <VStack>
-  <Heading sx={{"fontSize": "2.7em"}}>
-  {`|`}
+  <Heading sx={{"fontSize": "1.4em"}}>
+  {`El primero de 3 gana`}
 </Heading>
   <Heading sx={{"fontSize": "2.7em"}}>
   {`|`}
 </Heading>
   <Heading sx={{"fontSize": "2.7em"}}>
   {`|`}
-</Heading>
-  <Heading sx={{"fontSize": "2.7em"}}>
-  {`|`}
-</Heading>
-  <Heading sx={{"fontSize": "2.7em"}}>
-  {`El primero de 3 ganas`}
 </Heading>
   <Heading sx={{"fontSize": "2.7em"}}>
   {`|`}
@@ -84,7 +90,13 @@ export default function Component() {
   {`|`}
 </Heading>
 </VStack>
+  <Box sx={{"borderRadius": "0.9em", "background": "#FF5C00", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "width": "29%"}}>
+  <Center>
+  <Heading_d2c3016c1744cec37ad9aa47d0e64cf0/>
+</Center>
+</Box>
 </HStack>
+</Center>
 </Box>
   <NextHead>
   <title>
