@@ -1,9 +1,10 @@
 import reflex as rx
 
-from GameMini.body.juego_1.body import jugador, maquina, separador
+from GameMini.body.juego_1.body import botones, jugador, maquina, separador
 from GameMini.components.navbar import navbar
 from GameMini.routers.routers import routers
 from GameMini.styles.color import Color
+from GameMini.styles.elementos.button import button5
 from GameMini.styles.tamaños import Tamaños
 
 
@@ -14,9 +15,15 @@ def index () ->rx.components:
 
         rx.center(
             rx.hstack(
-                jugador(),
+                rx.vstack(
+                    jugador(),
+                    botones(),
+                ),
                 separador(),
+                rx.vstack(
                 maquina(),
+                rx.button("###N . P . C###" , style=button5)
+                ),
                 margin=Tamaños.MARGIN.value,
                 spacing="6em"
 

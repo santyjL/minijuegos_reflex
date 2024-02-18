@@ -35,3 +35,11 @@ butto4= dict(
         border=Tamaños.BORDER.value,
         box_shadow= "2px 2px 2px 0px #32135A",
 )
+
+#igual que el button 3 pero con un borde radius del 1005%
+button5= dict(
+        border_radius= Tamaños.BORDER_RADIUS_COMPLETO.value,
+        background = Color.SEGUNDARIO.value,
+        border=Tamaños.BORDER.value,
+        box_shadow= "2px 2x 2px 0px #FF5C00",
+)

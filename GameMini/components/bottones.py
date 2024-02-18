@@ -22,3 +22,15 @@ def button2(estilo , texto , width ):
         style=estilo,
 
     )
+
+#a diferencia del button1 este tiene el tamaño del texto en subtitulo
+def button3(estilo , texto , funcion , width ):
+    return rx.button(
+        rx.text(texto , font_size=TamañosTextos.subtitulo.value , color = TextoColor.TITULO.value ),
+        on_click=funcion,
+        width=width,
+        style=estilo,
+
+    )
+
+
