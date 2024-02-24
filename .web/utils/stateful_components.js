@@ -67,3 +67,15 @@ export function Button_0ff058bfa0b3ebb82679fb2a2bef29fd () {
 </Button>
   )
 }
+
+export function Button_ecf1aea8eedf74dec17895284b469037 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_cf75bd20132ef30404764ac9fca70a1d = useCallback((_e) => addEvents([Event("_redirect", {path:`/piedra_papel_tijeras_lagarto_spock`,external:false})], (_e), {}), [addEvents, Event])
+
+  return (
+    <Button onClick={on_click_cf75bd20132ef30404764ac9fca70a1d} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
+  {`Nueva Partida`}
+</Button>
+  )
+}

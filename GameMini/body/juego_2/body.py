@@ -68,6 +68,13 @@ class Count(rx.State):
 
     #define si el jugador a ganado o perdido y restablece las variables
     def redireccion(self):
+        if self.estado == "===":
+            self.intentos = 5
+            self.estado = "¡¡¡¡!!!"
+            self.num = random.randint(1 , 101)
+            self.count = 0
+            return rx.redirect(path=routers.JUEGO_DOS_FIN_DEL_JUEGO_GANASTES.value)
+
         if self.intentos <= 0:
             self.intentos = 5
             self.estado = "¡¡¡¡!!!"
@@ -75,12 +82,7 @@ class Count(rx.State):
             self.count = 0
             return rx.redirect(path=routers.JUEGO_DOS_FIN_DEL_JUEGO_PERDISTES.value)
 
-        if self.estado == "===":
-            self.intentos = 5
-            self.estado = "¡¡¡¡!!!"
-            self.num = random.randint(1 , 101)
-            self.count = 0
-            return rx.redirect(path=routers.JUEGO_DOS_FIN_DEL_JUEGO_GANASTES.value)
+
 
     #se crean las 2 variables que se muestran en la web y que son mutables
     @rx.var
