@@ -6,7 +6,7 @@ from GameMini.components.bottones import button1, button2
 from GameMini.routers.routers import routers
 from GameMini.styles.color import TextoColor
 from GameMini.styles.elementos.box import box_present, box_present2
-from GameMini.styles.elementos.button import butto, butto2, butto3
+from GameMini.styles.elementos.button import butto3
 from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
@@ -18,6 +18,14 @@ class Count(rx.State):
     count: int = 0
     estado : str = "¡¡¡¡!!!"
     intentos : int = 5
+
+
+    def intentos_count(self):
+        if self.intentos > 0:
+            return False
+
+        else :
+            return True
 
 
     #verifica si se puede aumentar el numero si es haci lo aumenta
@@ -56,6 +64,25 @@ class Count(rx.State):
             case _ if self.num == self.count :self.estado = "==="
 
         self.intentos -= 1
+        return self.redireccion()
+
+    #define si el jugador a ganado o perdido y restablece las variables
+    def redireccion(self):
+        if self.estado == "===":
+            self.intentos = 5
+            self.estado = "¡¡¡¡!!!"
+            self.num = random.randint(1 , 101)
+            self.count = 0
+            return rx.redirect(path=routers.JUEGO_DOS_FIN_DEL_JUEGO_GANASTES.value)
+
+        if self.intentos <= 0:
+            self.intentos = 5
+            self.estado = "¡¡¡¡!!!"
+            self.num = random.randint(1 , 101)
+            self.count = 0
+            return rx.redirect(path=routers.JUEGO_DOS_FIN_DEL_JUEGO_PERDISTES.value)
+
+
 
     #se crean las 2 variables que se muestran en la web y que son mutables
     @rx.var

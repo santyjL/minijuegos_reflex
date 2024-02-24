@@ -1,7 +1,7 @@
 import reflex as rx
 
-from GameMini.styles.color import Color, TextoColor
-from GameMini.styles.tamaños import Tamaños, TamañosTextos
+from GameMini.styles.color import Color
+from GameMini.styles.tamaños import Tamaños
 
 #paleta de estilo todos son iguales solo cambia el orden de colores
 butto= dict(
@@ -20,9 +20,25 @@ butto2= dict(
         margin_left = "75%"
 )
 
-#este no tiene el margin left
+#estos no tienen el margin left
 butto3= dict(
         border_radius= Tamaños.BORDER_RADIUS.value,
+        background = Color.SEGUNDARIO.value,
+        border=Tamaños.BORDER.value,
+        box_shadow= "2px 2x 2px 0px #FF5C00",
+)
+
+#paleta de estilo todos son iguales solo cambia el orden de colores
+butto4= dict(
+        border_radius= Tamaños.BORDER_RADIUS.value,
+        background = Color.PRINCIPAL.value,
+        border=Tamaños.BORDER.value,
+        box_shadow= "2px 2px 2px 0px #32135A",
+)
+
+#igual que el button 3 pero con un borde radius del 1005%
+button5= dict(
+        border_radius= Tamaños.BORDER_RADIUS_COMPLETO.value,
         background = Color.SEGUNDARIO.value,
         border=Tamaños.BORDER.value,
         box_shadow= "2px 2x 2px 0px #FF5C00",

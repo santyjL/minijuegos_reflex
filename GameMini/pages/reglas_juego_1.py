@@ -1,9 +1,10 @@
 import reflex as rx
 
-from GameMini.body.reglas_2.body import continuar_a_juego_1, reglas_juego_uno
+from GameMini.body.juego_1.reglas_2.body import (continuar_a_juego_1,
+                                                 reglas_juego_uno)
 from GameMini.components.navbar import navbar
 from GameMini.routers.routers import routers
-from GameMini.styles.color import Color, TextoColor
+from GameMini.styles.color import Color
 
 
 @rx.page(route=routers.REGLAS_JUEGO_UNO.value)

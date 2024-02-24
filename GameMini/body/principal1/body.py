@@ -7,7 +7,7 @@ from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
 #titulo que indica que en este apartado estan los minijuegos
-def elemento_1 () -> rx.Component():
+def elemento_1 () -> rx.Component:
     return rx.box(
             rx.center(
             rx.heading("Mini Juegos disponibles" , color=TextoColor.TITULO.value  , font_size=TamañosTextos.TITULO.value ),
@@ -16,7 +16,7 @@ def elemento_1 () -> rx.Component():
     )
 
 #primer juego lleva al rauter del juego y da su descrpcion
-def juego_1() -> rx.Component():
+def juego_1() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(
@@ -37,7 +37,7 @@ def juego_1() -> rx.Component():
     )
 
 #segundo juego lleva al rauter del juego y da su descrpcion
-def juego_2() -> rx.Component():
+def juego_2() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(
@@ -54,7 +54,7 @@ def juego_2() -> rx.Component():
     )
 
 #tercer juego lleva al rauter del juego y da su descrpcion
-def juego_3() -> rx.Component():
+def juego_3() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(
@@ -71,7 +71,7 @@ def juego_3() -> rx.Component():
     )
 
 #cuarto juego lleva al rauter del juego y da su descrpcion
-def juego_4() -> rx.Component():
+def juego_4() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(
@@ -87,7 +87,7 @@ def juego_4() -> rx.Component():
     )
 
 #presentacion de todos los juegos divididos por 2 partes
-def todos_los_juegos() -> rx.Component():
+def todos_los_juegos() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(

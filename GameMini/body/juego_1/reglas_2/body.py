@@ -8,7 +8,7 @@ from GameMini.styles.tamaños import TamañosTextos
 
 
 #en esta caja aparece como se juega el juego , son 10 reglas
-def reglas_juego_uno() -> rx.Component():
+def reglas_juego_uno() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(
@@ -77,7 +77,7 @@ def continuar_a_juego_1():
             rx.text(
                 "continuar" , font_size=TamañosTextos.TITULO.value
             ),
-            href=routers.JUEGO_TRES.value
+            href=routers.JUEGO_UNO.value
         ),
         style=butto
         )
