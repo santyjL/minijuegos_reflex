@@ -1,25 +1,20 @@
 import reflex as rx
 
-from GameMini.components.bottones import button3
-from GameMini.routers.routers import routers
 from GameMini.styles.color import TextoColor
 from GameMini.styles.elementos.box import box_present
-from GameMini.styles.elementos.button import button5
 from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
 class TicTacToeState(rx.State):
-    matriz: list[list[str]] = [["", "", ""],
-                               ["" , "" , ""],
-                               ["" , "" , ""]]
-    Jugador_actual: str = "X"
+    matriz: list[list[str]] = [["", "", ""] for _ in range(3)]
+    Jugador_actual: str = "❌"
     ganador: str = None
 
     def juego(self, x, y):
         if not self.matriz[x][y] and not self.ganador:
             self.matriz[x][y] = self.Jugador_actual
             self.check_ganador()
-            self.Jugador_actual = "O" if self.Jugador_actual == "X" else "X"
+            self.Jugador_actual = "⭕" if self.Jugador_actual == "❌" else "❌"
 
     def check_ganador(self):
         # Check horizontal, vertical and diagonal for ganador
@@ -32,10 +27,8 @@ class TicTacToeState(rx.State):
                 return
 
     def reiniciar_juego(self):
-        self.matriz = [["", "", ""],
-                       ["" , "" , ""],
-                       ["" , "" , ""]]
-        self.Jugador_actual = "X"
+        self.matriz = [["", "", ""] for _ in range(3)]
+        self.Jugador_actual = "❌"
         self.ganador = None
 
 

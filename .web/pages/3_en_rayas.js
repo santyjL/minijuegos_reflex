@@ -3,7 +3,7 @@
 
 import { Fragment, useCallback, useContext } from "react"
 import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
-import { Box, Button, Center, Grid, Heading, HStack, Image as ChakraImage, Link, Spacer, Stack, Text, VStack } from "@chakra-ui/react"
+import { Box, Button, Center, Grid, GridItem, Heading, HStack, Image as ChakraImage, Link, Spacer, Stack, Text, VStack } from "@chakra-ui/react"
 import NextLink from "next/link"
 import "@radix-ui/themes/styles.css"
 import "focus-visible/dist/focus-visible"
@@ -15,6 +15,44 @@ import NextHead from "next/head"
 
 
 
+export function Grid_4c1fedfa061c671aebbdea2f03522f1d () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+  const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
+
+
+  return (
+    <Grid sx={{"gap": 4}} templateColumns={`repeat(3, 1fr)`} templateRows={`repeat(3, 1fr)`}>
+  {Array.from(range(3, undefined, 1)).map((x, index_3fc983bac0505150d855beb4711a201b) => (
+  <Fragment key={index_3fc983bac0505150d855beb4711a201b}>
+  {Array.from(range(3, undefined, 1)).map((y, index_56c7a86aac840fc84d1be1e7446a9d47) => (
+  <GridItem colSpan={1} key={index_56c7a86aac840fc84d1be1e7446a9d47} rowSpan={1}>
+  <Fragment>
+  {isTrue((state__tic_tac_toe_state.matriz.at(x).at(y) === "")) ? (
+  <Fragment>
+  <Button onClick={(_e) => addEvents([Event("state.tic_tac_toe_state.juego", {x:x,y:y})], (_e), {})} sx={{"padding": 10}}>
+  <Text sx={{"fontSize": "2.7em"}}>
+  {`⬜`}
+</Text>
+</Button>
+</Fragment>
+) : (
+  <Fragment>
+  <Button sx={{"disabled": true, "padding": 10}}>
+  <Text sx={{"fontSize": "2.7em"}}>
+  {state__tic_tac_toe_state.matriz.at(x).at(y)}
+</Text>
+</Button>
+</Fragment>
+)}
+</Fragment>
+</GridItem>
+))}
+</Fragment>
+))}
+</Grid>
+  )
+}
+
 export function Button_3b929957eb62487495b1f4884da434bb () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
@@ -24,38 +62,6 @@ export function Button_3b929957eb62487495b1f4884da434bb () {
     <Button onClick={on_click_f830e27fcc2268a80e702ba6076429be} sx={{"borderRadius": "0.9em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00"}}>
   {`Reset`}
 </Button>
-  )
-}
-
-export function Grid_bd0f8aa72b26fff6aad5c255a0335b43 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-  const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
-
-
-  return (
-    <Grid sx={{"columns": "3", "spacing": "4"}}>
-  {Array.from(range(3, undefined, 1)).map((x, index_81ee3af7e18001f4db6ad54d582048c0) => (
-  <Fragment key={index_81ee3af7e18001f4db6ad54d582048c0}>
-  {Array.from(range(3, undefined, 1)).map((y, index_360f2040dc6ddf4371c8f71757186eda) => (
-  <Fragment key={index_360f2040dc6ddf4371c8f71757186eda}>
-  {isTrue((state__tic_tac_toe_state.matriz.at(x).at(y) === "")) ? (
-  <Fragment>
-  <Button onClick={(_e) => addEvents([Event("state.tic_tac_toe_state.juego", {x:x,y:y})], (_e), {})}>
-  {`-`}
-</Button>
-</Fragment>
-) : (
-  <Fragment>
-  <Button sx={{"disabled": true}}>
-  {state__tic_tac_toe_state.matriz.at(x).at(y)}
-</Button>
-</Fragment>
-)}
-</Fragment>
-))}
-</Fragment>
-))}
-</Grid>
   )
 }
 
@@ -114,11 +120,13 @@ export default function Component() {
 </Box>
 </VStack>
   <Center>
-  <HStack>
-  <Grid_bd0f8aa72b26fff6aad5c255a0335b43/>
+  <HStack sx={{"boxShadow": "11px 11px 11px 0px #FF5C00 , -11px -11px 11px 0px #32135A", "padding": 10}}>
+  <Grid_4c1fedfa061c671aebbdea2f03522f1d/>
 </HStack>
 </Center>
+  <Center sx={{"margin": "1em"}}>
   <Button_3b929957eb62487495b1f4884da434bb/>
+</Center>
 </Box>
   <NextHead>
   <title>
