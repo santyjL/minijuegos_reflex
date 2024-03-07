@@ -79,3 +79,18 @@ export function Button_ecf1aea8eedf74dec17895284b469037 () {
 </Button>
   )
 }
+<<<<<<< HEAD
+=======
+
+export function Button_11a6acadcb04b5c0e06d3b73d4067b9f () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_e5cffd71ca4df7fa59de83e5c298f117 = useCallback((_e) => addEvents([Event("_redirect", {path:`/3_en_rayas`,external:false})], (_e), {}), [addEvents, Event])
+
+  return (
+    <Button onClick={on_click_e5cffd71ca4df7fa59de83e5c298f117} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
+  {`Nueva Partida`}
+</Button>
+  )
+}
+>>>>>>> develop

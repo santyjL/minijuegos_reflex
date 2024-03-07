@@ -82,8 +82,6 @@ class Count(rx.State):
             self.count = 0
             return rx.redirect(path=routers.JUEGO_DOS_FIN_DEL_JUEGO_PERDISTES.value)
 
-
-
     #se crean las 2 variables que se muestran en la web y que son mutables
     @rx.var
     def get_count(self) -> int:

@@ -12,6 +12,7 @@ import NextHead from "next/head"
 
 
 
+<<<<<<< HEAD
 export function Text_6ad1d12f9b122afabc4a8d700c2d86a3 () {
   const state__estados = useContext(StateContexts.state__estados)
 
@@ -20,6 +21,19 @@ export function Text_6ad1d12f9b122afabc4a8d700c2d86a3 () {
     <Text as={`span`} sx={{"color": "blue", "fontWeight": "bold"}}>
   {`${state__estados.puntuacion_jugador}`}
 </Text>
+=======
+export function Button_05b70e762d6a808a6ceb837a1ccd10c3 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_d5f9a04447965b5593845da192e224f8 = useCallback((_e) => addEvents([Event("state.estados.piedra", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <Button onClick={on_click_d5f9a04447965b5593845da192e224f8} sx={{"borderRadius": "10em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00", "width": "50%"}}>
+  <Text sx={{"fontSize": "1.4em", "color": "#FFFFFF"}}>
+  {`🥌`}
+</Text>
+</Button>
+>>>>>>> develop
   )
 }
 
@@ -34,6 +48,7 @@ export function Heading_6e589d0c72e4ff4f97352390da89ca7b () {
   )
 }
 
+<<<<<<< HEAD
 export function Button_1dd91b1a1af538459f585273b2710bef () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
@@ -45,6 +60,16 @@ export function Button_1dd91b1a1af538459f585273b2710bef () {
   {`✂`}
 </Text>
 </Button>
+=======
+export function Text_de4a4940a1e23bbc02e87e1cb88e4fa5 () {
+  const state__estados = useContext(StateContexts.state__estados)
+
+
+  return (
+    <Text as={`span`} sx={{"color": "blue", "fontWeight": "bold"}}>
+  {`${state__estados.puntuacion_npc}`}
+</Text>
+>>>>>>> develop
   )
 }
 
@@ -62,6 +87,7 @@ export function Button_3817651f523055b741ad9e694f2fa789 () {
   )
 }
 
+<<<<<<< HEAD
 export function Button_05b70e762d6a808a6ceb837a1ccd10c3 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
@@ -101,6 +127,8 @@ export function Text_de4a4940a1e23bbc02e87e1cb88e4fa5 () {
   )
 }
 
+=======
+>>>>>>> develop
 export function Button_258adb2cf5ba98bbc099f86f06b59840 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
@@ -115,6 +143,23 @@ export function Button_258adb2cf5ba98bbc099f86f06b59840 () {
   )
 }
 
+<<<<<<< HEAD
+=======
+export function Button_1dd91b1a1af538459f585273b2710bef () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_5722ac56ccd71a3ca0db0242a9c1504a = useCallback((_e) => addEvents([Event("state.estados.tijeras", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <Button onClick={on_click_5722ac56ccd71a3ca0db0242a9c1504a} sx={{"borderRadius": "10em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00", "width": "50%"}}>
+  <Text sx={{"fontSize": "1.4em", "color": "#FFFFFF"}}>
+  {`✂`}
+</Text>
+</Button>
+  )
+}
+
+>>>>>>> develop
 export function Heading_6429a6a857b9b703b639ec0ba51dc3d2 () {
   const state__estados = useContext(StateContexts.state__estados)
 
@@ -126,6 +171,34 @@ export function Heading_6429a6a857b9b703b639ec0ba51dc3d2 () {
   )
 }
 
+<<<<<<< HEAD
+=======
+export function Text_6ad1d12f9b122afabc4a8d700c2d86a3 () {
+  const state__estados = useContext(StateContexts.state__estados)
+
+
+  return (
+    <Text as={`span`} sx={{"color": "blue", "fontWeight": "bold"}}>
+  {`${state__estados.puntuacion_jugador}`}
+</Text>
+  )
+}
+
+export function Button_8124dab5d6f22fa178e62c1544fe6d26 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_efc72ba2d11df242b0f6e1ecc7a550bb = useCallback((_e) => addEvents([Event("state.estados.papel", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <Button onClick={on_click_efc72ba2d11df242b0f6e1ecc7a550bb} sx={{"borderRadius": "10em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00", "width": "50%"}}>
+  <Text sx={{"fontSize": "1.4em", "color": "#FFFFFF"}}>
+  {`📋`}
+</Text>
+</Button>
+  )
+}
+
+>>>>>>> develop
 export default function Component() {
 
   return (
