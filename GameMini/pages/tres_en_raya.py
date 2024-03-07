@@ -4,12 +4,10 @@ from GameMini.body.juego_3.body import TicTacToeState, ganador
 from GameMini.components import final_juego, navbar
 from GameMini.routers.routers import routers
 from GameMini.styles.color import Color, TextoColor
-from GameMini.styles.elementos.box import box_present
 from GameMini.styles.elementos.button import butto3
 from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
-@rx.page(route=routers.JUEGO_TRES.value)
 @rx.page(route=routers.JUEGO_TRES.value)
 def index() -> rx.components:
     juego_tablero = rx.grid(
@@ -39,12 +37,6 @@ def index() -> rx.components:
         template_rows="repeat(3, 1fr)",
         gap=4
     )
-    # Otras partes del código...
-    ganador_texto = rx.cond(
-        TicTacToeState.ganador,
-        rx.text(f"Player {TicTacToeState.ganador} wins!", color=TextoColor.ESPECIAL.value),
-        rx.text("")
-    )
 
     return rx.box(
         navbar.navbar(),
@@ -67,3 +59,38 @@ def index() -> rx.components:
 
     height= "100vh"
 )
+
+@rx.page(route=routers.JUEGO_TRES_FIN_DEL_JUEGO_PERDISTES.value)
+def perdistes() -> rx.component:
+    return rx.box(
+        rx.center(
+            rx.vstack(
+            rx.text("HAS PERDIDO" , font_size=TamañosTextos.ENORME.value , color=TextoColor.TITULO.value , ),
+            final_juego.final_del_juego(routers.JUEGO_TRES.value)
+            )
+        ),
+        bg=Color.BACKGROUND.value,
+        background_size= "cover",
+        top=0,
+
+        width="100%",
+        height= "100vh"
+    )
+
+
+@rx.page(route=routers.JUEGO_TRES_FIN_DEL_JUEGO_GANASTES.value)
+def ganastes() -> rx.component:
+    return rx.box(
+        rx.center(
+            rx.vstack(
+            rx.text("HAS GANADO" , font_size=TamañosTextos.ENORME.value , color=TextoColor.TITULO.value , ),
+            final_juego.final_del_juego(routers.JUEGO_TRES.value)
+            )
+        ),
+        bg=Color.BACKGROUND.value,
+        background_size= "cover",
+        top=0,
+
+        width="100%",
+        height= "100vh"
+    )

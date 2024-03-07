@@ -7,23 +7,34 @@ import { Box, Button, Center, Grid, GridItem, Heading, HStack, Image as ChakraIm
 import NextLink from "next/link"
 import "@radix-ui/themes/styles.css"
 import "focus-visible/dist/focus-visible"
+import { EventLoopContext, StateContexts } from "/utils/context"
 import { Theme as RadixThemesTheme } from "@radix-ui/themes"
 import range from "/utils/helpers/range.js"
-import { EventLoopContext, StateContexts } from "/utils/context"
 import { Event, isTrue } from "/utils/state"
 import NextHead from "next/head"
 
 
 
-export function Grid_4c1fedfa061c671aebbdea2f03522f1d () {
+export function Heading_621d22890f19e824cb64257d0d9a5049 () {
+  const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
+
+
+  return (
+    <Heading size={`xl`} sx={{"color": "#000000"}}>
+  {`Puntaje:${state__tic_tac_toe_state.puntuacion_jugador}`}
+</Heading>
+  )
+}
+
+export function Grid_0827fe207e02e7fc6777bed92d49e72e () {
   const [addEvents, connectError] = useContext(EventLoopContext);
   const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
 
 
   return (
     <Grid sx={{"gap": 4}} templateColumns={`repeat(3, 1fr)`} templateRows={`repeat(3, 1fr)`}>
-  {Array.from(range(3, undefined, 1)).map((x, index_3fc983bac0505150d855beb4711a201b) => (
-  <Fragment key={index_3fc983bac0505150d855beb4711a201b}>
+  {Array.from(range(3, undefined, 1)).map((x, index_7462922e6e9bc282b8e5762f4b8b386a) => (
+  <Fragment key={index_7462922e6e9bc282b8e5762f4b8b386a}>
   {Array.from(range(3, undefined, 1)).map((y, index_56c7a86aac840fc84d1be1e7446a9d47) => (
   <GridItem colSpan={1} key={index_56c7a86aac840fc84d1be1e7446a9d47} rowSpan={1}>
   <Fragment>
@@ -65,6 +76,17 @@ export function Button_3b929957eb62487495b1f4884da434bb () {
   )
 }
 
+export function Heading_adfb67a61fb354e94360d31f89a46edf () {
+  const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
+
+
+  return (
+    <Heading size={`xl`} sx={{"color": "#000000"}}>
+  {`Puntaje:${state__tic_tac_toe_state.puntuacion_npc}`}
+</Heading>
+  )
+}
+
 export default function Component() {
 
   return (
@@ -97,11 +119,9 @@ export default function Component() {
   <HStack spacing={`16em`}>
   <VStack>
   <Heading size={`2xl`} sx={{"color": "#000000"}}>
-  {`-Tu-`}
+  {`-NPC-`}
 </Heading>
-  <Heading size={`xl`} sx={{"color": "#000000"}}>
-  {`Puntaje: `}
-</Heading>
+  <Heading_adfb67a61fb354e94360d31f89a46edf/>
 </VStack>
   <Stack sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": "100%", "margin": "3em"}}>
   <Text sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
@@ -112,16 +132,14 @@ export default function Component() {
   <Heading size={`2xl`} sx={{"color": "#000000"}}>
   {`-Tu-`}
 </Heading>
-  <Heading size={`xl`} sx={{"color": "#000000"}}>
-  {`Puntaje: `}
-</Heading>
+  <Heading_621d22890f19e824cb64257d0d9a5049/>
 </VStack>
 </HStack>
 </Box>
 </VStack>
   <Center>
   <HStack sx={{"boxShadow": "11px 11px 11px 0px #FF5C00 , -11px -11px 11px 0px #32135A", "padding": 10}}>
-  <Grid_4c1fedfa061c671aebbdea2f03522f1d/>
+  <Grid_0827fe207e02e7fc6777bed92d49e72e/>
 </HStack>
 </Center>
   <Center sx={{"margin": "1em"}}>
