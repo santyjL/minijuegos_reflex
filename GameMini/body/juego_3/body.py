@@ -48,32 +48,31 @@ class TicTacToeState(rx.State):
         self.matriz = [["", "", ""] for _ in range(3)]
         self.jugador = "❌"
         self.ganador = None
-
-        if self.puntuacion_jugador >= 5 or self.puntuacion_npc >= 5 :
+        if self.jugador_puntuacion >= 5 :
             self.jugador_puntuacion = 0
             self.npc_puntuacion = 0
-            return self.redireccion()
+
+            return self.redireccion_ganastes()
+
+        if self.npc_puntuacion >= 5:
+            self.jugador_puntuacion = 0
+            self.npc_puntuacion = 0
+
+            return self.redireccion_perdistes()
 
     def sumar_punto(self):
-        if self.ganador == "❌":
+        if self.ganador == "❌" and self.puntuacion_jugador <5:
             self.jugador_puntuacion += 1
 
-        elif self.ganador == "⭕":
+        if self.ganador == "⭕" and self.puntuacion_npc <5:
             self.npc_puntuacion += 1
 
-        return self.redireccion()
 
-    def redireccion(self):
-        if self.puntuacion_jugador >= 5:
-            self.reiniciar_juego()
-            # Redirige a la ruta del jugador ganador
-            return rx.redirect(path=routers.JUEGO_TRES_FIN_DEL_JUEGO_GANASTES.value)
+    def redireccion_ganastes(self):
+        return rx.redirect(path=routers.JUEGO_TRES_FIN_DEL_JUEGO_GANASTES.value)
 
-        if self.puntuacion_npc >= 5:
-            self.reiniciar_juego()
-            # Redirige a la ruta del jugador perdedor o un mensaje genérico
-            return rx.redirect(path=routers.JUEGO_DOS_FIN_DEL_JUEGO_PERDISTES.value)
-
+    def redireccion_perdistes(self):
+        return rx.redirect(path=routers.JUEGO_TRES_FIN_DEL_JUEGO_PERDISTES.value)
 
 
     @rx.var

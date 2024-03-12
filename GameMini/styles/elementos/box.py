@@ -1,7 +1,7 @@
 import reflex as rx
 
-from GameMini.styles.color import Color, TextoColor
-from GameMini.styles.tamaños import Tamaños, TamañosTextos
+from GameMini.styles.color import Color
+from GameMini.styles.tamaños import Tamaños
 
 
 #presentacion de cajas donde su ancho es modificable

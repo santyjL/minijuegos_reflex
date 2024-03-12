@@ -79,8 +79,6 @@ export function Button_ecf1aea8eedf74dec17895284b469037 () {
 </Button>
   )
 }
-<<<<<<< HEAD
-=======
 
 export function Button_11a6acadcb04b5c0e06d3b73d4067b9f () {
   const [addEvents, connectError] = useContext(EventLoopContext);
@@ -93,4 +91,3 @@ export function Button_11a6acadcb04b5c0e06d3b73d4067b9f () {
 </Button>
   )
 }
->>>>>>> develop
