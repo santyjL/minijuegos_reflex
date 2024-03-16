@@ -8,13 +8,17 @@ from GameMini.styles.elementos.box import box_present
 from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
+#clase de tictactoe
 class TicTacToeState(rx.State):
+
+    #variables
     matriz: list[list[str]] = [["", "", ""] for _ in range(3)]
     jugador: str = "❌"
     ganador: str = None
     jugador_puntuacion = 0
     npc_puntuacion = 0
 
+    #Permite que un jugador realice un movimiento en el juego.
     def juego(self, x, y):
         if not self.matriz[x][y] and not self.ganador:
             self.matriz[x][y] = self.jugador
@@ -25,6 +29,7 @@ class TicTacToeState(rx.State):
             if not self.ganador:
                 self.jugar_npc()
 
+    #Permite que el NPC realice un movimiento automáticamente.
     def jugar_npc(self):
         posiciones_vacias = [(fila, columna) for fila in range(3) for columna in range(3) if self.matriz[fila][columna] == ""]
         if posiciones_vacias:
@@ -34,6 +39,7 @@ class TicTacToeState(rx.State):
             if self.ganador:
                 self.sumar_punto()
 
+    # Verifica si hay un ganador después de cada movimiento
     def check_ganador(self):
         tablero = self.matriz
         lineas = [set(tablero[fila]) for fila in range(3)] + \
@@ -44,6 +50,7 @@ class TicTacToeState(rx.State):
             if len(linea) == 1 and "" not in linea:
                 self.ganador = linea.pop()
 
+    #Reinicia el juego cuando un jugador alcanza los 5 puntos.
     def reiniciar_juego(self):
         self.matriz = [["", "", ""] for _ in range(3)]
         self.jugador = "❌"
@@ -60,6 +67,7 @@ class TicTacToeState(rx.State):
 
             return self.redireccion_perdistes()
 
+    # Suma un punto al jugador correspondiente cuando gana una partida
     def sumar_punto(self):
         if self.ganador == "❌" and self.puntuacion_jugador <5:
             self.jugador_puntuacion += 1
@@ -67,7 +75,7 @@ class TicTacToeState(rx.State):
         if self.ganador == "⭕" and self.puntuacion_npc <5:
             self.npc_puntuacion += 1
 
-
+    # Redirige al usuario al final del juego dependiendo de si ganó o perdió.
     def redireccion_ganastes(self):
         return rx.redirect(path=routers.JUEGO_TRES_FIN_DEL_JUEGO_GANASTES.value)
 
@@ -83,6 +91,7 @@ class TicTacToeState(rx.State):
     def puntuacion_jugador(self) -> int:
         return self.jugador_puntuacion
 
+#interfaz donde se muestra la puntuacion de cada jugador
 def ganador() -> rx.component:
     return rx.box(
             rx.hstack(

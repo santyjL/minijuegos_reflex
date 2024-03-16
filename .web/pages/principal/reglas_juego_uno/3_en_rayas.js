@@ -15,29 +15,6 @@ import NextHead from "next/head"
 
 
 
-export function Button_3b929957eb62487495b1f4884da434bb () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_f830e27fcc2268a80e702ba6076429be = useCallback((_e) => addEvents([Event("state.tic_tac_toe_state.reiniciar_juego", {})], (_e), {}), [addEvents, Event])
-
-  return (
-    <Button onClick={on_click_f830e27fcc2268a80e702ba6076429be} sx={{"borderRadius": "0.9em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00"}}>
-  {`Reset`}
-</Button>
-  )
-}
-
-export function Heading_adfb67a61fb354e94360d31f89a46edf () {
-  const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
-
-
-  return (
-    <Heading size={`xl`} sx={{"color": "#000000"}}>
-  {`Puntaje:${state__tic_tac_toe_state.puntuacion_npc}`}
-</Heading>
-  )
-}
-
 export function Heading_621d22890f19e824cb64257d0d9a5049 () {
   const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
 
@@ -49,15 +26,15 @@ export function Heading_621d22890f19e824cb64257d0d9a5049 () {
   )
 }
 
-export function Grid_962d564bca48c60516c6600976ab4d94 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
+export function Grid_bac496bd899ec644c58b0a70f3e63daa () {
   const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
+  const [addEvents, connectError] = useContext(EventLoopContext);
 
 
   return (
     <Grid sx={{"gap": 4}} templateColumns={`repeat(3, 1fr)`} templateRows={`repeat(3, 1fr)`}>
-  {Array.from(range(3, undefined, 1)).map((x, index_1076da31c91892caf53600c161084bcd) => (
-  <Fragment key={index_1076da31c91892caf53600c161084bcd}>
+  {Array.from(range(3, undefined, 1)).map((x, index_f563294e909ea0f6ce8190704ab8428a) => (
+  <Fragment key={index_f563294e909ea0f6ce8190704ab8428a}>
   {Array.from(range(3, undefined, 1)).map((y, index_56c7a86aac840fc84d1be1e7446a9d47) => (
   <GridItem colSpan={1} key={index_56c7a86aac840fc84d1be1e7446a9d47} rowSpan={1}>
   <Fragment>
@@ -84,6 +61,29 @@ export function Grid_962d564bca48c60516c6600976ab4d94 () {
 </Fragment>
 ))}
 </Grid>
+  )
+}
+
+export function Heading_adfb67a61fb354e94360d31f89a46edf () {
+  const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
+
+
+  return (
+    <Heading size={`xl`} sx={{"color": "#000000"}}>
+  {`Puntaje:${state__tic_tac_toe_state.puntuacion_npc}`}
+</Heading>
+  )
+}
+
+export function Button_3b929957eb62487495b1f4884da434bb () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_f830e27fcc2268a80e702ba6076429be = useCallback((_e) => addEvents([Event("state.tic_tac_toe_state.reiniciar_juego", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <Button onClick={on_click_f830e27fcc2268a80e702ba6076429be} sx={{"borderRadius": "0.9em", "background": "#32135A", "border": "1px solid #000", "boxShadow": "2px 2x 2px 0px #FF5C00"}}>
+  {`Reset`}
+</Button>
   )
 }
 
@@ -139,7 +139,7 @@ export default function Component() {
 </VStack>
   <Center>
   <HStack sx={{"boxShadow": "11px 11px 11px 0px #FF5C00 , -11px -11px 11px 0px #32135A", "padding": 10}}>
-  <Grid_962d564bca48c60516c6600976ab4d94/>
+  <Grid_bac496bd899ec644c58b0a70f3e63daa/>
 </HStack>
 </Center>
   <Center sx={{"margin": "1em"}}>
