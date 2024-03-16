@@ -13,16 +13,16 @@ Esta web esta para practicar y fortalecer mis conocimientos con el framework **r
 
 #### PANTALLA PRINCIPAL
 
-![https://github.com/santyjl](https://raw.githubusercontent.com/santyjL/minijuegos_reflex/blob/main/pagina-principal.jpg)
+![https://github.com/santyjL](https://raw.githubusercontent.com/santyjL/minijuegos_reflex/blob/main/pagina-principal.jpg)
 
 #### JUEGO PIEDRA🥌 PAPEL📋 TIJERAS✂ LAGARTO🦎 O SPOCK🖖
 
-![https://github.com/santyjl](https://raw.githubusercontent.com/santyjL/minijuegos_reflex/blob/main/Juego-uno.jpg)
+![https://github.com/santyjL](https://raw.githubusercontent.com/santyjL/minijuegos_reflex/blob/main/Juego-uno.jpg)
 
 #### JUEGO ENCUENTRA EL NUMERO PERDIDO
 
-![https://github.com/santyjl](https://raw.githubusercontent.com/santyjL/minijuegos_reflex/blob/main/Juego-dos.jpg)
+![https://github.com/santyjL](https://raw.githubusercontent.com/santyjL/minijuegos_reflex/blob/main/Juego-dos.jpg)
 
 #### JUEGO TIC TAC TOE
 
-![https://github.com/santyjl](https://raw.githubusercontent.com/santyjL/minijuegos_reflex/blob/main/Juego-tres.jpg)
+![https://github.com/santyjL](https://raw.githubusercontent.com/santyjL/minijuegos_reflex/blob/main/Juego-tres.jpg)
