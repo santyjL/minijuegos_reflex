@@ -33,7 +33,7 @@ def juego_1() -> rx.Component:
             style=box_present()
 
         ),
-        width="69%",
+        width="100%",
     )
 
 #segundo juego lleva al rauter del juego y da su descrpcion
@@ -70,34 +70,12 @@ def juego_3() -> rx.Component:
         width="100%"
     )
 
-#cuarto juego lleva al rauter del juego y da su descrpcion
-def juego_4() -> rx.Component:
-    return rx.box(
-        rx.center(
-            rx.vstack(
-                rx.link(
-                    rx.heading("Ping Pong 🏓|🏓" , color=TextoColor.TITULO.value , font_size=TamañosTextos.TITULO.value),
-                    href=routers.JUEGO_CUATRO.value
-                ),
-                rx.text("El ping pog,unos de los primeros juegos existente en el mundo." , color=TextoColor.SUBTITULOS.value , font_size=TamañosTextos.subtitulo.value),
-                margin_x=Tamaños.MARGIN_X.value , margin_y=Tamaños.MARGIN_Y.value,
-
-            ),style=box_present()
-        ),width="30%" ,
-    )
-
 #presentacion de todos los juegos divididos por 2 partes
 def todos_los_juegos() -> rx.Component:
     return rx.box(
         rx.center(
             rx.vstack(
-                rx.center(
-                    rx.hstack(
-                        juego_1(),
-                        rx.spacer(),
-                        juego_4()
-                        )
-                    ),
+                    juego_1(),
                 rx.center(
                     rx.hstack(
                         juego_2(),

@@ -56,37 +56,37 @@ export function Button_1e8c0375e28b2af9d011a4a0800c839a () {
   )
 }
 
-export function Button_0ff058bfa0b3ebb82679fb2a2bef29fd () {
+export function Button_3191db9d9c76cefa5533ea442dc1572d () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_812e70f76cb7df4cacb6dac344fc8c45 = useCallback((_e) => addEvents([Event("_redirect", {path:`/Encuentra_el_numero`,external:false})], (_e), {}), [addEvents, Event])
+  const on_click_af5418b7449dc368d9958924b02b57f4 = useCallback((_e) => addEvents([Event("_redirect", {path:`//principal/Encuentra_el_numero`,external:false})], (_e), {}), [addEvents, Event])
 
   return (
-    <Button onClick={on_click_812e70f76cb7df4cacb6dac344fc8c45} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
+    <Button onClick={on_click_af5418b7449dc368d9958924b02b57f4} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
   {`Nueva Partida`}
 </Button>
   )
 }
 
-export function Button_ecf1aea8eedf74dec17895284b469037 () {
+export function Button_001a312798ad7cb4635571428afd20f5 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_cf75bd20132ef30404764ac9fca70a1d = useCallback((_e) => addEvents([Event("_redirect", {path:`/piedra_papel_tijeras_lagarto_spock`,external:false})], (_e), {}), [addEvents, Event])
+  const on_click_854ef7518ffe376121ca3cee09ee518d = useCallback((_e) => addEvents([Event("_redirect", {path:`//principal/piedra_papel_tijeras_lagarto_spock`,external:false})], (_e), {}), [addEvents, Event])
 
   return (
-    <Button onClick={on_click_cf75bd20132ef30404764ac9fca70a1d} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
+    <Button onClick={on_click_854ef7518ffe376121ca3cee09ee518d} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
   {`Nueva Partida`}
 </Button>
   )
 }
 
-export function Button_11a6acadcb04b5c0e06d3b73d4067b9f () {
+export function Button_67aece200090e610310d8f1a0efce229 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_e5cffd71ca4df7fa59de83e5c298f117 = useCallback((_e) => addEvents([Event("_redirect", {path:`/3_en_rayas`,external:false})], (_e), {}), [addEvents, Event])
+  const on_click_183010714ec7ed95de0a24f5d916d175 = useCallback((_e) => addEvents([Event("_redirect", {path:`///principal/reglas_juego_uno/3_en_rayas`,external:false})], (_e), {}), [addEvents, Event])
 
   return (
-    <Button onClick={on_click_e5cffd71ca4df7fa59de83e5c298f117} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
+    <Button onClick={on_click_183010714ec7ed95de0a24f5d916d175} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
   {`Nueva Partida`}
 </Button>
   )

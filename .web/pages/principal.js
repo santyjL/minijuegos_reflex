@@ -49,12 +49,10 @@ export default function Component() {
   <Box sx={{"width": "100%"}}>
   <Center>
   <VStack>
-  <Center>
-  <HStack>
-  <Box sx={{"width": "69%"}}>
+  <Box sx={{"width": "100%"}}>
   <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": null}}>
   <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
-  <Link as={NextLink} href={`/reglas_juego_uno`}>
+  <Link as={NextLink} href={`//principal/reglas_juego_uno`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
   {`Piedra🥌 , Papel📋 , Tijeras✂ , Lagarto🦎 , spock 🖖`}
 </Heading>
@@ -65,29 +63,12 @@ export default function Component() {
 </VStack>
 </Center>
 </Box>
-  <Spacer/>
-  <Box sx={{"width": "30%"}}>
-  <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": null}}>
-  <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
-  <Link as={NextLink} href={`/Ping_pong`}>
-  <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
-  {`Ping Pong 🏓|🏓`}
-</Heading>
-</Link>
-  <Text sx={{"color": "#C1C1C1", "fontSize": "1.4em"}}>
-  {`El ping pog,unos de los primeros juegos existente en el mundo.`}
-</Text>
-</VStack>
-</Center>
-</Box>
-</HStack>
-</Center>
   <Center sx={{"width": "100%"}}>
   <HStack>
   <Box sx={{"width": "100%"}}>
   <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": "92.4%"}}>
   <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
-  <Link as={NextLink} href={`/Encuentra_el_numero`}>
+  <Link as={NextLink} href={`//principal/Encuentra_el_numero`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
   {`Encuentra el numero 🎲`}
 </Heading>
@@ -102,7 +83,7 @@ export default function Component() {
   <Box sx={{"width": "100%"}}>
   <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": "92.4%"}}>
   <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
-  <Link as={NextLink} href={`/3_en_rayas`}>
+  <Link as={NextLink} href={`///principal/reglas_juego_uno/3_en_rayas`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
   {`Tres en raya ❌ | ⭕  `}
 </Heading>
