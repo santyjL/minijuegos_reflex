@@ -2,7 +2,7 @@
 
 
 import { Fragment } from "react"
-import { Button_1e8c0375e28b2af9d011a4a0800c839a, Button_67aece200090e610310d8f1a0efce229, Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
+import { Button_1e8c0375e28b2af9d011a4a0800c839a, Button_ee124e0db2588ddbdc995ebe3f937b0a, Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
 import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextHead from "next/head"
@@ -18,11 +18,11 @@ export default function Component() {
   <Center>
   <VStack>
   <Text sx={{"fontSize": "13.5em", "color": "#FFFFFF"}}>
-  {`HAS GANADO`}
+  {`HAS PERDIDO`}
 </Text>
   <HStack>
   <Button_1e8c0375e28b2af9d011a4a0800c839a/>
-  <Button_67aece200090e610310d8f1a0efce229/>
+  <Button_ee124e0db2588ddbdc995ebe3f937b0a/>
 </HStack>
 </VStack>
 </Center>

@@ -15,6 +15,17 @@ import NextHead from "next/head"
 
 
 
+export function Heading_adfb67a61fb354e94360d31f89a46edf () {
+  const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
+
+
+  return (
+    <Heading size={`xl`} sx={{"color": "#000000"}}>
+  {`Puntaje:${state__tic_tac_toe_state.puntuacion_npc}`}
+</Heading>
+  )
+}
+
 export function Heading_621d22890f19e824cb64257d0d9a5049 () {
   const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
 
@@ -26,15 +37,15 @@ export function Heading_621d22890f19e824cb64257d0d9a5049 () {
   )
 }
 
-export function Grid_bac496bd899ec644c58b0a70f3e63daa () {
+export function Grid_d3e73f0629b3b0adb840a442d95ec883 () {
   const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
   const [addEvents, connectError] = useContext(EventLoopContext);
 
 
   return (
     <Grid sx={{"gap": 4}} templateColumns={`repeat(3, 1fr)`} templateRows={`repeat(3, 1fr)`}>
-  {Array.from(range(3, undefined, 1)).map((x, index_f563294e909ea0f6ce8190704ab8428a) => (
-  <Fragment key={index_f563294e909ea0f6ce8190704ab8428a}>
+  {Array.from(range(3, undefined, 1)).map((x, index_8e9528d12c07c54f1890c7b2255aae6c) => (
+  <Fragment key={index_8e9528d12c07c54f1890c7b2255aae6c}>
   {Array.from(range(3, undefined, 1)).map((y, index_56c7a86aac840fc84d1be1e7446a9d47) => (
   <GridItem colSpan={1} key={index_56c7a86aac840fc84d1be1e7446a9d47} rowSpan={1}>
   <Fragment>
@@ -61,17 +72,6 @@ export function Grid_bac496bd899ec644c58b0a70f3e63daa () {
 </Fragment>
 ))}
 </Grid>
-  )
-}
-
-export function Heading_adfb67a61fb354e94360d31f89a46edf () {
-  const state__tic_tac_toe_state = useContext(StateContexts.state__tic_tac_toe_state)
-
-
-  return (
-    <Heading size={`xl`} sx={{"color": "#000000"}}>
-  {`Puntaje:${state__tic_tac_toe_state.puntuacion_npc}`}
-</Heading>
   )
 }
 
@@ -139,7 +139,7 @@ export default function Component() {
 </VStack>
   <Center>
   <HStack sx={{"boxShadow": "11px 11px 11px 0px #FF5C00 , -11px -11px 11px 0px #32135A", "padding": 10}}>
-  <Grid_bac496bd899ec644c58b0a70f3e63daa/>
+  <Grid_d3e73f0629b3b0adb840a442d95ec883/>
 </HStack>
 </Center>
   <Center sx={{"margin": "1em"}}>

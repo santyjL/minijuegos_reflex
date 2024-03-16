@@ -68,25 +68,25 @@ export function Button_3191db9d9c76cefa5533ea442dc1572d () {
   )
 }
 
-export function Button_001a312798ad7cb4635571428afd20f5 () {
+export function Button_ee124e0db2588ddbdc995ebe3f937b0a () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_854ef7518ffe376121ca3cee09ee518d = useCallback((_e) => addEvents([Event("_redirect", {path:`//principal/piedra_papel_tijeras_lagarto_spock`,external:false})], (_e), {}), [addEvents, Event])
+  const on_click_19ac83c63972af84fa6dd3be275e4844 = useCallback((_e) => addEvents([Event("_redirect", {path:`///principal/reglas_juego_uno/piedra_papel_tijeras_lagarto_spock`,external:false})], (_e), {}), [addEvents, Event])
 
   return (
-    <Button onClick={on_click_854ef7518ffe376121ca3cee09ee518d} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
+    <Button onClick={on_click_19ac83c63972af84fa6dd3be275e4844} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
   {`Nueva Partida`}
 </Button>
   )
 }
 
-export function Button_67aece200090e610310d8f1a0efce229 () {
+export function Button_e96e0d64028ed5af77bcf3233f56d843 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
-  const on_click_183010714ec7ed95de0a24f5d916d175 = useCallback((_e) => addEvents([Event("_redirect", {path:`///principal/reglas_juego_uno/3_en_rayas`,external:false})], (_e), {}), [addEvents, Event])
+  const on_click_81cddb2b989cd1af75a53687da8e1615 = useCallback((_e) => addEvents([Event("_redirect", {path:`//principal/3_en_rayas`,external:false})], (_e), {}), [addEvents, Event])
 
   return (
-    <Button onClick={on_click_183010714ec7ed95de0a24f5d916d175} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
+    <Button onClick={on_click_81cddb2b989cd1af75a53687da8e1615} sx={{"borderRadius": "0.9em", "background": "#FF5C00", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #32135A", "fontSize": "1.4em"}}>
   {`Nueva Partida`}
 </Button>
   )

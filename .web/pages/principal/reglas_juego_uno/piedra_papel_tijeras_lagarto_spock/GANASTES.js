@@ -2,7 +2,7 @@
 
 
 import { Fragment } from "react"
-import { Button_001a312798ad7cb4635571428afd20f5, Button_1e8c0375e28b2af9d011a4a0800c839a, Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
+import { Button_1e8c0375e28b2af9d011a4a0800c839a, Button_ee124e0db2588ddbdc995ebe3f937b0a, Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
 import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextHead from "next/head"
@@ -22,7 +22,7 @@ export default function Component() {
 </Text>
   <HStack>
   <Button_1e8c0375e28b2af9d011a4a0800c839a/>
-  <Button_001a312798ad7cb4635571428afd20f5/>
+  <Button_ee124e0db2588ddbdc995ebe3f937b0a/>
 </HStack>
 </VStack>
 </Center>

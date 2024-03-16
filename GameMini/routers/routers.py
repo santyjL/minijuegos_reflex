@@ -5,9 +5,9 @@ class routers(Enum):
     #principal
     PRINCIPAL="/principal"
     REGLAS_JUEGO_UNO=f"/{PRINCIPAL}/reglas_juego_uno"
-    JUEGO_UNO=f"/{PRINCIPAL}/piedra_papel_tijeras_lagarto_spock"
+    JUEGO_UNO=f"/{REGLAS_JUEGO_UNO}/piedra_papel_tijeras_lagarto_spock"
     JUEGO_DOS=f"/{PRINCIPAL}/Encuentra_el_numero"
-    JUEGO_TRES=f"/{REGLAS_JUEGO_UNO}/3_en_rayas"
+    JUEGO_TRES=f"/{PRINCIPAL}/3_en_rayas"
 
     #secundarias
     JUEGO_UNO_FIN_DEL_JUEGO_PERDISTES = f"/{JUEGO_UNO}/PERDISTES"

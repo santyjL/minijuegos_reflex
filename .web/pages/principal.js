@@ -83,7 +83,7 @@ export default function Component() {
   <Box sx={{"width": "100%"}}>
   <Center sx={{"borderRadius": "0.9em", "background": "#32135A", "marginX": "1.5em", "marginY": "1em", "padding": "0.8", "border": "1px solid #000", "boxShadow": "2px 2px 2px 0px #FF5C00", "width": "92.4%"}}>
   <VStack sx={{"marginX": "1.5em", "marginY": "1em"}}>
-  <Link as={NextLink} href={`///principal/reglas_juego_uno/3_en_rayas`}>
+  <Link as={NextLink} href={`//principal/3_en_rayas`}>
   <Heading sx={{"color": "#FFFFFF", "fontSize": "2.7em"}}>
   {`Tres en raya ❌ | ⭕  `}
 </Heading>
