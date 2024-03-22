@@ -5,8 +5,8 @@ Esta web esta para practicar y fortalecer mis conocimientos con el framework **r
 
 ### TECNOLOGIAS
 
-[![Python + 3.11](https://img.shields.io/badge/Python-green?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)]()
-[![Reflex + 0.3.8](https://img.shields.io/badge/Reflex-purple?style=for-the-badge&logo=Reflex&logoColor=white&labelColor=101010)]()
+[![Python+3.11](https://img.shields.io/badge/Python-green?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)]()
+[![Reflex+0.3.8](https://img.shields.io/badge/Reflex-purple?style=for-the-badge&logo=Reflex&logoColor=white&labelColor=101010)]()
 [![CSS](https://img.shields.io/badge/CSS-blue?style=for-the-badge&logo=CSS3&logoColor=white&labelColor=101010)]()
 
 ### EJEMPLOS VISUALES DE LOS RESULTADOS
