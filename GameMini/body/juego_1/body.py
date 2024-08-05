@@ -157,7 +157,7 @@ def maquina() -> rx.Component:
 
 
 
-def separador() ->rx.component:
+def separador() ->rx.Component:
     return rx.vstack(
         rx.heading("El Primero De 3 Gana", font_size=TamañosTextos.subtitulo.value ,color=TextoColor.TITULO.value),
         rx.heading("|", font_size=TamañosTextos.TITULO.value,color=TextoColor.TITULO.value),

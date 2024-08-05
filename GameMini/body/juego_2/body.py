@@ -92,7 +92,7 @@ class Count(rx.State):
         return self.estado
 
 #se crea un apartado para el enunciado que indica de que trata el juego
-def reglas() -> rx.component:
+def reglas() -> rx.Component:
     return rx.box(
         rx.center(
             rx.hstack(

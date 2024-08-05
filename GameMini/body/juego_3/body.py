@@ -92,7 +92,7 @@ class TicTacToeState(rx.State):
         return self.jugador_puntuacion
 
 #interfaz donde se muestra la puntuacion de cada jugador
-def ganador() -> rx.component:
+def ganador() -> rx.Component:
     return rx.box(
             rx.hstack(
                 rx.vstack(
