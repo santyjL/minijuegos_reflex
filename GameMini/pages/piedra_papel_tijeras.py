@@ -11,7 +11,7 @@ from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
 @rx.page(route=routers.JUEGO_UNO.value)
-def index () ->rx.components:
+def index () ->rx.Component:
     return rx.box(
         navbar.navbar(),
 

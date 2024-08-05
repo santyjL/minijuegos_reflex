@@ -9,7 +9,7 @@ from GameMini.styles.tamaños import TamañosTextos
 
 
 @rx.page(route=routers.JUEGO_DOS.value)
-def index () ->rx.components:
+def index () ->rx.Component:
     return rx.box(
         navbar.navbar(),
         rx.center(

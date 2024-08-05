@@ -7,7 +7,7 @@ from GameMini.styles.color import Color
 
 
 @rx.page(route=routers.PRINCIPAL.value)
-def index () ->rx.components:
+def index () ->rx.Component:
     return rx.box(
         navbar(),
         rx.center(

@@ -9,7 +9,7 @@ from GameMini.styles.tamaños import Tamaños, TamañosTextos
 
 
 @rx.page(route=routers.JUEGO_TRES.value)
-def index() -> rx.components:
+def index() -> rx.Component:
     juego_tablero = rx.grid(
         rx.foreach(
             rx.Var.range(3),
